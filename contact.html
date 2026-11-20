@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website van Ramadan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="website-box">
+        
+        <header>
+
+            <nav>
+                
+                <ul class="nav-links">
+                     <div class="logo-cirkel">
+                        <img src="images/ICT-logo.png" alt="Logo" class="ronde-afbeelding">
+                    </div>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overzicht.html">Overzicht</a></li>
+                    <li><a href="over-mij.html">mij+hobbies</a></li>
+                    <li><a href="Huisdieren.html">Huisdieren</a></li>
+                    <li><a href="toekomst.html">toekomst</a></li>
+                    <li><a href="vaardigheden.html">vaardigheden</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    
+                </ul>
+                
+            </nav>
+            
+
+        </header>
+        
+         <main>
+    <section>
+        <div class="formulier-box" id="contactformulier">
+
+            <h2>Contactformulier</h2>
+
+            <p>
+                Heb je een vraag of wil je contact met mij opnemen?
+                Vul dan het onderstaande formulier in.
+            </p>
+
+            <form action="https://formspree.io/f/mwllanad" method="post">
+
+                <label for="naam">Volledige naam</label>
+                <input
+                    type="text"
+                    id="naam"
+                    name="naam"
+                    placeholder="Vul je naam in"
+                    required
+                >
+
+                <label for="email">E-mailadres</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Vul je e-mailadres in"
+                    required
+                >
+
+                <label for="onderwerp">Onderwerp</label>
+                <select id="onderwerp" name="onderwerp" required>
+                    <option value="">Kies een onderwerp</option>
+                    <option value="algemene-vraag">Algemene vraag</option>
+                    <option value="website">Vraag over mijn website</option>
+                    <option value="programmeren">Programmeren</option>
+                    <option value="samenwerking">Samenwerking</option>
+                    <option value="anders">Anders</option>
+                </select>
+
+                <label for="bericht">Bericht</label>
+                <textarea
+                    id="bericht"
+                    name="bericht"
+                    rows="6"
+                    placeholder="Typ hier je bericht..."
+                    required
+                ></textarea>
+
+                <button type="submit">Versturen</button>
+
+            </form>
+
+        </div>
+    </section>
+         </body>
+</main>
+</html>
